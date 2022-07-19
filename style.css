@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+.mw{
+    min-width: 1080px;
+}
+.nav{
+    overflow: hidden;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,194,85,1) 0%, rgba(71,0,148,1) 100%);
+    height: 135px;
+    z-index: 9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgb(53, 53, 53);
+    
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 0px;
+    margin-left: 20px;
+    margin-bottom: 40px;  
+}
+.logo img:hover{
+    padding-left: 5px;
+    margin-left: 20px;
+    transition: .5s;
+    margin-bottom: 40px;  
+}
+.nav_side{
+    float: right;
+    width: 40%;
+    margin-top: 45px;
+}
+.nav_side a{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-top: 72px;
+    padding-right: 20px;
+    padding-left: 10px;
+    color: white;
+    font-size: 15 px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+    color: rgb(255, 149, 0);
+    text-decoration: underline;
+    transition: all 1.5s ease;
+}
+
+/*___________________________________*/
+
+
+.main{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 135px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 450px; 
+    
+
+    }
+.main .main_content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main .main_content h2{
+    color: black;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+.para{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2;
+    font-weight: bold;
+    
+}
+.main .main_content .btn{
+    margin-top: 50px;
+}
+
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(1,1,158,1) 0%, rgba(5,254,43,1) 100%);
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+}
+.main .main_content .btn a:hover{
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.3s;
+}
+
+/*________________________________________________*/
+
+
+.cycle {
+    background-color: lightgrey;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
+    box-shadow: 0px 3px 65px 0px rgb(53, 53, 53);
+    object-fit:cover;
+
+}
+
+.cycle h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-shadow: 3px 0px 0px rgb(38, 38, 38);
+}
+
+.cycle h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    
+}
+
+.cycle .cycle_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+
+}
+
+.cycle .cycle_container .item{
+    
+    width: 33%;
+    margin: 20px;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+
+}
+.cycle .cycle_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgb(68, 69, 68);
+    border-radius: 25px;
+    background: rgb(34,193,195);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.cycle .cycle_container .item .item_img{
+    align-items: center;
+    object-fit: contain;
+    max-width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.cycle .cycle_container .item .item_img:hover{
+    align-items: center;
+    object-fit: contain;
+    max-width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 1s;
+    
+}
+.cycle .cycle_container .item .item_img img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+.cycle .cycle_container .item .item_content{
+    text-align: center;
+
+}
+.cycle .cycle_container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    
+}
+.cycle .cycle_container .item .item_content p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cycle .cycle_container .item .item_content a{
+    text-decoration: none;
+    font-size: 15px;
+    margin: 50px;
+    padding: 10px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgb(244, 232, 4) 0%, rgba(5,254,43,1) 100%);
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+}
+
+.cycle .cycle_container .item .item_content a:hover{
+    background-color: black;
+    color: rgb(24, 24, 24);
+    border: none;
+    border-bottom: 4px solid rgb(51, 51, 51);
+    transition: 0.3s;
+}
+.explore_btn{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.cycle .explore_btn a{
+    text-decoration: none;
+    font-size: 15px;
+    margin: 50px;
+    padding: 10px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgb(244, 232, 4) 0%, rgba(5,254,43,1) 100%);
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+}
+.cycle .explore_btn a:hover{
+    background-color: black;
+    color: rgb(24, 24, 24);
+    border: none;
+    border-bottom: 4px solid rgb(51, 51, 51);
+    transition: 0.3s;
+}
+/*_____________________________________________________*/
+
+.animate-charcter
+{
+  
+  background-image: linear-gradient(
+    -225deg,
+    #88ff00 0%,
+    #ff8400 29%,
+    #ffa513 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*_______________________________________________________*/
+
+.keypoint{
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.keypoint h2{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.keypoint .key_container{
+    display: flex;
+
+}
+.keypoint .key_container .key_content{
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    float: left;
+}
+
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid rgb(0, 250, 196);
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+    border-radius: 15px;
+}
+.keypoint .key_container .key_content li:hover{
+    box-shadow: 0px 3px 65px 0px rgb(68, 69, 68);
+    transition: 1s;
+}
+
+.keypoint .key_container .key_image{
+    float: right;
+    width: 30%;
+    margin-right:20px ;
+    border-radius: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(78,159,255,1) 100%);
+    box-shadow: 0px 3px 65px 0px rgb(68, 69, 68);
+}
+.keypoint .key_container .key_image:hover{
+    box-shadow: 0px 3px 65px 0px rgb(255, 251, 0);
+    padding: 20px;
+    transition: 3s;
+    background: rgb(251,236,63);
+background: radial-gradient(circle, rgba(251,236,63,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+.keypoint .key_container .key_image img{
+    object-fit: contain;
+    width: 100%;
+
+}
+
+/*______________________________________________________________*/
+
+.testi{
+    padding: 50px;
+
+}
+
+.testi h2{
+    text-transform: initial;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.testi .testi-container{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+}
+.testi .testi-container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+   
+}
+.testi .testi-container .item{
+    width: 100%;
+    padding: 60px;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    
+    box-shadow: none;
+}
+.testi .testi-container .item .item_img{
+    align-items: center;
+    object-fit: contain;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.testi .testi-container .item .item_img img{
+    max-width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.testi .testi-container .item .item_img img:hover{
+    max-width: 100%;
+    height: 200px;
+    padding: 0px;
+    border-radius: 15%;
+    transition: 1s;
+}
+.testi .testi-container .item .item_content{
+    text-align: center;
+
+}
+.testi .testi-container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    
+}
+.testi .testi-container .item .item_content p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+/*__________________________________________________________*/
+
+.team{
+    padding: 50px;
+}
+
+.team h2{
+    text-transform: initial;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.team-container{
+    display: flex;
+
+}
+
+.team .team-container .team-vid{
+    width: 50%;
+    padding: 20px;
+
+}
+.team .team-container .team-vid iframe{
+    width: 100%;
+    border-radius: 25px;
+}
+.team .team-container .team-content{
+    width: 50%;
+    padding: 20px;
+    float: right;
+    margin-left: 60px;
+
+}
+.team .team-container .team-content p{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+/*-------------------------------------------------------------------------*/
+
+.feed{
+    background-image: url('images/background.png');
+    background-size: cover;
+    margin: 30px;
+    border-radius: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    box-shadow: 0px 3px 65px 0px rgb(68, 69, 68);
+}
+
+.feed h2{
+    text-transform: initial;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    margin-bottom: 40px;
+    padding: 10px;
+    padding: 50px;
+}
+
+.feed .feed_form{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
+.feed .feed_form form{
+    padding: 20px;
+    
+
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    opacity: 80%;
+    font-family: 'Quicksand', sans-serif;
+}
+.feed .feed_form form input:hover{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    opacity: 100%;
+    transition: .5s;
+    border-left: 5px solid #515150 ;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.feed .feed_form form textarea{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    opacity: 90%;
+    font-family: 'Quicksand', sans-serif;
+}   
+.feed .feed_form form textarea:hover{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    opacity: 100%;
+    transition: .5s;
+    border-left: 5px solid #424242 ;
+    border-right: 5px solid #424242 ;
+    font-family: 'Quicksand', sans-serif;
+}
+.feed .feed_form form button{
+    text-decoration: none;
+    font-size: 15px;
+    margin: 30px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    color: black;
+}
+.feed .feed_form form button:hover{
+    background-color: rgb(42, 41, 41);
+    color: rgb(253, 253, 253);
+    
+    transition: 0.3s;
+}
+/*_________________________________________*/
+.about_us{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 135px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%; 
+    
+
+    }
+.about_us h2{
+        text-transform: initial;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(2, 2, 2);
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+        margin-bottom: 40px;
+        padding: 10px;
+        padding: 50px;
+    }
+    .about_us p{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+/*__________________________________________________________________*/
+
+.contact{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    padding: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;  
+    align-items: center;
+}
+.contact h2{
+    text-transform: initial;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 2, 2);
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding: 10px;
+    padding: 50px;
+}
+.contact p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+.contact .location{
+    
+    align-items: center;
+    
+}
+.contact .location iframe{
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+/*___________________________________________________________________*/
+footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,194,85,1) 0%, rgba(71,0,148,1) 100%);
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+@keyframes spin3D {
+    from { transform: rotateY(0deg) }
+    to { transform: rotateY(360deg) }
+  }
+footer .footer_logo img:hover{
+    padding: 5px;
+    animation-name: spin3D;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: ease-in-out;
+}
+
+ footer .pages{
+     text-align: center;
+ }
+ footer .pages:hover{
+    text-align: center;
+    padding: 3px;
+    transition: .5s;
+}
+ footer .pages h3{
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
+ }
+ footer .pages a{
+     text-decoration: none;
+     margin: 10px;
+     color: white;
+     font-size: 15px;
+     font-family: 'Quicksand', sans-serif;
+ }
+ footer .pages a:hover{
+    text-decoration: none;
+    margin: 10px;
+    padding-top: 10px;
+    color: rgb(252, 139, 0);
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+    transition: 1s;
+}
+
+footer .doc{
+    text-align: center;
+}
+footer .doc:hover{
+    text-align: center;
+    padding: 3px;
+    transition: .5s;
+}
+footer .doc h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+footer .doc a:hover{
+   text-decoration: none;
+   margin: 10px;
+   padding-top: 10px;
+   color: rgb(252, 139, 0);
+   font-size: 17px;
+   font-family: 'Quicksand', sans-serif;
+   transition: 1s;
+}
+
+footer .social{
+    text-align: center;
+}
+footer .social:hover{
+    text-align: center;
+    padding: 3px;
+    transition: .5s;
+}
+footer .social h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+footer .social a{
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 20px;
+}
+footer .social a:hover{
+    color: rgb(255, 132, 0);
+    margin: 5px;
+    font-size: 23px;
+    transition: 1s;
+}
+
+footer .Contact{
+    text-align: center;
+}
+footer .Contact:hover{
+    text-align: center;
+    padding: 3px;
+    transition: .5s;
+}
+footer .Contact h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+footer .Contact a{
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 20px;
+}
+footer .Contact a:hover{
+    color: rgb(255, 132, 0);
+    margin: 5px;
+    font-size: 23px;
+    transition: 1s;
+}
